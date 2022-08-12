@@ -1,4 +1,4 @@
-#include<iostream>
+/*#include<iostream>
 #include<stdio.h>
 #include<string>
 #include<stack>
@@ -35,4 +35,4 @@ int main()
 		}
 
 	}
-}
+}*/

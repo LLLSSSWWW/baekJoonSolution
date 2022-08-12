@@ -1,14 +1,14 @@
-#include <iostream>
+/*#include <iostream>
 
 using namespace std;
 
 void blackJack(int N, int M) {
 	if (N < 3 || N > 100) {
-		cout << "Ä«µå °³¼ö¸¦ ´Ù½Ã ¸ÂÃß¼¼¿ä" << endl;
+		cout << "Ä«ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½" << endl;
 		
 	}
 	else if (M < 10 || M > 300000) {
-		cout << "Ä«µåÀÇ ¹üÀ§¸¦ ´Ù½Ã ¸ÂÃß¼¼¿ä" << endl;
+		cout << "Ä«ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½" << endl;
 		
 	}
 
@@ -41,4 +41,4 @@ int main(void) {
 	cin >> N >> M;
 
 	blackJack(N, M);
-}
+}*/
