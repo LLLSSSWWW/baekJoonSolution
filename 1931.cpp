@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 #include<vector>
 #include<algorithm>
 
@@ -9,4 +9,4 @@ int main(void) {
     cin >> N;
     
 
-}*/
+}
