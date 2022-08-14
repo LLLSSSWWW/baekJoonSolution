@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <stack>
 
 using namespace std;
@@ -25,4 +25,4 @@ int main(void) {
 
 	cout << sum << endl;
 
-}*/
+}

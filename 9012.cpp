@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <stack>
 #include <algorithm>
 
@@ -45,4 +45,4 @@ int main(void) {
 			cout << "NO" << endl;
 		}
 	}
-}*/
+}

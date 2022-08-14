@@ -1,4 +1,4 @@
-/*#include<iostream>
+#include<iostream>
 #define MAX 9
 using namespace std;
 
@@ -26,4 +26,4 @@ void DFS(int depth) {
 int main(void) {
 	cin >> N >> M;
 	DFS(0);
-}*/
+}

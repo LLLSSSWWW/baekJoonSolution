@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -41,4 +41,4 @@ int main(void) {
 	cin >> N >> M;
 
 	blackJack(N, M);
-}*/
+}
