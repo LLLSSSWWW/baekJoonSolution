@@ -24,7 +24,7 @@ void recur(int x, int y, int size) {
 	if (blue == true) {
 		blueCount++;
 		return;
-	}
+	}//asdfasdfasdfasdfasdf
 
 	recur(x, y, size / 2);
 	recur(x, y + size / 2, size / 2);
