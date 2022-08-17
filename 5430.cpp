@@ -1,28 +1,32 @@
 #include<iostream>
 #include<deque>
 #include<sstream>
+#include<vector>
 using namespace std;
 
 int main(void) {
     deque<string> d;
+    vector<char> v;
+    vector<char>::iterator iter;
     int N;
     cin >> N;
 
     for(int i = 0; i < N; i++) {
         string func, numArr, index;
-        int length = 0, Rcnt =0, Dcnt = 0;
-        bool flag = true;
+        int length = 0, Dcnt = 0;
+        bool flag = false;
         cin >> func >> length >> numArr;
         numArr.erase(numArr.begin());
         numArr.pop_back();
         istringstream ss(numArr);
-
+        v.clear();
+        d.clear();
+        
         for(int j = 0; j < func.length(); j++) {
-            if(func[j] == 'R') {
-                Rcnt++;
-            }else if(func[j] == 'D') {
+            char temp = func[j];
+            v.push_back(temp);
+            if(func[j] == 'D')
                 Dcnt++;
-            }
         }
         
         if(length < Dcnt) {
@@ -33,26 +37,31 @@ int main(void) {
                 d.push_back(index);
             }
 
-            if(Rcnt % 2 == 0) {
-                flag = true;
-            }else {
-                flag = false;
-            }
+            iter = v.begin();
 
-            for(int j = 0; j < Dcnt; j++) {
-                if(flag)
-                    d.pop_front();
-                else if(!flag)
-                    d.pop_back();
+            for(int j = 0; j < v.size(); j++) {
+                if(*iter == 'R') {
+                    flag = !flag;
+                    iter++;
+                }else if(*iter == 'D'){
+                    if(!flag) {
+                        d.pop_front();
+                        iter++;
+                        }
+                    else if(flag) {
+                        d.pop_back();
+                        iter++;
+                        }
+                }  
             }
 
             int dSize = d.size() - 1;
             cout << "[";
         
             for(int j = 0; j < d.size(); j++) {
-                if(flag) {
+                if(!flag) {
                     cout << d[j];
-                }else if(!flag) {
+                }else if(flag) {
                     cout << d[dSize];
                     dSize--;
                 }
@@ -61,7 +70,6 @@ int main(void) {
                     cout << ",";
             }
             cout << "]" << "\n";
-            d.clear();
         }
     }
 }
