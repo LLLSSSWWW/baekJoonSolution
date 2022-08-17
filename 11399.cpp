@@ -9,7 +9,6 @@ int main(void) {
     cin >> N;
 
     vector<int> v;
-    vector<int>::iterator iter;
 
     for(int i = 0; i < N; i++) {
         cin >> index;
