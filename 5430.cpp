@@ -15,13 +15,16 @@ int main(void) {
         string func, numArr, index;
         int length = 0, Dcnt = 0;
         bool flag = false;
+
         cin >> func >> length >> numArr;
+
         numArr.erase(numArr.begin());
         numArr.pop_back();
+        
         istringstream ss(numArr);
         v.clear();
         d.clear();
-        
+
         for(int j = 0; j < func.length(); j++) {
             char temp = func[j];
             v.push_back(temp);
